@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="jdbc:mysql://127.0.0.1:3306/cloud2020?useUnicode=true&amp;characterEncoding=utf-8&amp;allowMultiQueries=true&amp;useOldAliasMetadataBehavior=true&amp;serverTimezone=GMT%2B8" uuid="4791f3f8-8563-4606-afd4-e0c1e67d7592">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://127.0.0.1:3306/cloud2020?useUnicode=true&amp;characterEncoding=utf-8&amp;allowMultiQueries=true&amp;useOldAliasMetadataBehavior=true&amp;serverTimezone=GMT%2B8</jdbc-url>
+    </data-source>
+  </component>
+</project>
