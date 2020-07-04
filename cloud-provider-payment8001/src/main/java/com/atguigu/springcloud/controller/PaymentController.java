@@ -5,9 +5,11 @@ import com.atguigu.springcloud.entities.Payment;
 import com.atguigu.springcloud.service.PaymentService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
+import java.util.List;
 
 /**
  * @description:
@@ -28,7 +30,7 @@ public class PaymentController {
         int result = paymentService.create(payment);
         log.info("*****插入结果：" + result);
         if (result > 0) {  //成功
-            return new CommonResult(200, "插入数据库成功,访问--》"+serverPort, result);
+            return new CommonResult(200, "插入数据库成功,访问--》" + serverPort, result);
         } else {
             return new CommonResult(444, "插入数据库失败", null);
         }
@@ -39,9 +41,14 @@ public class PaymentController {
         Payment payment = paymentService.getPaymentById(id);
         log.info("*****查询结果：" + payment);
         if (payment != null) {  //说明有数据，能查询成功
-            return new CommonResult(200, "查询成功访问--》"+serverPort, payment);
+            return new CommonResult(200, "查询成功访问--》" + serverPort, payment);
         } else {
             return new CommonResult(444, "没有对应记录，查询ID：" + id, null);
         }
+    }
+
+    @GetMapping("/payment/getLb")
+    public String getPaymentLb() {
+        return serverPort;
     }
 }
