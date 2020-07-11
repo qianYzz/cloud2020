@@ -15,3 +15,5 @@
 /cloud-consumer-feign-hystrix-order80/target/
 /cloud-consumer-hystrix-dashboard9001/target/
 /cloud-provider-hystrix-payment8001/target/
+/cloud-provider-payment8004/target
+/target/
