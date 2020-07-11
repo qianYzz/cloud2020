@@ -1,7 +1,0 @@
--- auto Generated on 2020-05-22
--- DROP TABLE IF EXISTS payment;
-CREATE TABLE payment(
-	id BIGINT (15) NOT NULL AUTO_INCREMENT COMMENT 'id',
-	serial VARCHAR (50) NOT NULL DEFAULT '' COMMENT 'serial',
-	PRIMARY KEY (id)
-)ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT 'payment';
