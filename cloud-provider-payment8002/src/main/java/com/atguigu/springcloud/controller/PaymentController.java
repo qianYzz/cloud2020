@@ -45,7 +45,7 @@ public class PaymentController {
         }
     }
 
-    @GetMapping("/payment/getLb")
+    @GetMapping("/payment/lb")
     public String getPaymentLb() {
         return serverPort;
     }
