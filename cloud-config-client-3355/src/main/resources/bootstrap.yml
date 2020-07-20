@@ -6,6 +6,7 @@ spring:
     name: config-client
   cloud:
 
+
     config:
       label: master
       name: config
@@ -22,7 +23,6 @@ eureka:
   client:
     service-url:
       defaultZone: http://eureka7001.com:7001/eureka
-
     #Config客户端配置
     config:
       label: master #分支名称
@@ -44,11 +44,9 @@ eureka:
       defaultZone: http://localhost:7001/eureka
 
 # 暴露监控端点
-
 management:
   endpoints:
     web:
       exposure:
-        include: "*"
         include: "*"
 

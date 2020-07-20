@@ -17,16 +17,16 @@ rabbitmq:
   port: 5672
   username: guest
   password: guest
-
+          uri:  https://github.com/qianYzz/springcloud-config.git
+          search-paths:
+            - springcloud-config
+      label: master
 eureka:
   client:
     service-url:
       defaultZone:  http://localhost:7001/eureka
-
 management:
   endpoints:
     web:
       exposure:
         include: 'bus-refresh'
-
-

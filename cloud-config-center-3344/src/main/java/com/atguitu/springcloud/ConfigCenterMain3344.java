@@ -9,7 +9,6 @@ import org.springframework.cloud.config.server.EnableConfigServer;
  * @author: liuy
  * @time: 2020/7/14 18:48
  */
-
 @SpringBootApplication
 @EnableConfigServer
 public class ConfigCenterMain3344 {
