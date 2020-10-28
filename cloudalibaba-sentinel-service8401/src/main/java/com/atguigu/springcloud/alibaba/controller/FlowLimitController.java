@@ -48,7 +48,7 @@ public class FlowLimitController {
     @SentinelResource(value = "testE", blockHandler = "handlerTestE")
     public String testE(@RequestParam(value = "p1", required = false) String p1,
                         @RequestParam(value = "p2", required = false) String p2) {
-        int age = 10 / 0;
+        //int age = 10 / 0;
         return "----------testE";
     }
 
